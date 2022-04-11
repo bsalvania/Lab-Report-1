@@ -1,13 +1,16 @@
 # **Installing VScode**
 
-To install Visual Studio code, first go to the [VS Code](https://code.visualstudio.com) website. Download the version for the operating system you have, such as Windows or macOS. After finishing the installation, running VScode should open up with a window that looks like this
+To install Visual Studio code, first go to the [VS Code](https://code.visualstudio.com) website. Download the version for the operating system you have, such as Windows or macOS. After finishing the installation, running VScode should open up with a window that looks like this:
 
 ![Image](GetStarted.png) or this ![Image](GetStarted2.jpg)
 If you see this, you are good.
 
 # **Remotely Connecting**
 
-If you are on Windows, the first step to remotely connecting is to download OpenSSh, where you can follow the steps from this [Link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) or follow the steps from here ![Image](installationOpenSSH.jpg) and ensuring you can find OpenSSH Client/Server in your apps, which should look like this. 
+If you are on Windows, the first step to remotely connecting is to download OpenSSh, where you can follow the steps from this [Link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) or follow the steps from here 
+![Image](installationOpenSSH.jpg) 
+and ensure you can find OpenSSH Client/Server in your apps, which should look like this: 
+
 ![Image](openSSHInstall.jpg)
 
 --- 
@@ -95,10 +98,14 @@ Then we need to copy the *public* key to the .ssh directory of your user account
 * *back on client
 * scp /Users/user-name/.ssh/**id_rsa**.pub cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys (You use your username and the path you saw in the command above. Window's users replace `id_rsa` with `id_ed25519`).
 
-It should look something like this: ![Image](setUp.jpg)
-![Image](setUp2.jpg)
+It should look something like this: 
+
+![Image](setUp.jpg)
+
+![Image](setUp2.jpg) 
 
 
 # **Optimizing Remote Running**
 Now, you can log in to the remote computer without inputting a password. It should go something like this: ![Image](NoPw.jpg)
+
 There is no longer a prompt for a password. Some other ways to optimize remote running is using the up-arrow on your keyboard to recall the last command that was run. You can use semicolons to run multiple commands on the same line in most terminals. For example, `cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI`. And can write a command in quotes at the end of an ssh command to directly run it on the remote server, then exit. For example, this command will log in and list the home directory on the remote server: `ssh cs15lsp22zz@ieng6.ucsd.edu "ls"`
