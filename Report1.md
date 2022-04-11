@@ -2,13 +2,16 @@
 
 To install Visual Studio code, first go to the [VS Code](https://code.visualstudio.com) website. Download the version for the operating system you have, such as Windows or macOS. After finishing the installation, running VScode should open up with a window that looks like this:
 
-![Image](GetStarted.png) or this ![Image](GetStarted2.jpg)
+![Image](GetStarted.png) or this:
+
+ ![Image](GetStarted2.jpg)
 If you see this, you are good.
 
 # **Remotely Connecting**
 
 If you are on Windows, the first step to remotely connecting is to download OpenSSh, where you can follow the steps from this [Link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) or follow the steps from here 
 ![Image](installationOpenSSH.jpg) 
+
 and ensure you can find OpenSSH Client/Server in your apps, which should look like this: 
 
 ![Image](openSSHInstall.jpg)
