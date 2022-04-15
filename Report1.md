@@ -119,3 +119,6 @@ It should look something like this:
 Now, you can log in to the remote computer without inputting a password. It should go something like this: ![Image](NoPw.jpg)
 
 There is no longer a prompt for a password. Some other ways to optimize remote running is using the up-arrow on your keyboard to recall the last command that was run. You can use semicolons to run multiple commands on the same line in most terminals. For example, `cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI`. And can write a command in quotes at the end of an ssh command to directly run it on the remote server, then exit. For example, this command will log in and list the home directory on the remote server: `ssh cs15lsp22zz@ieng6.ucsd.edu "ls"`
+ 
+ ---
+ [Home](https://bsalvania.github.io/Lab-Report-1/index.html)
