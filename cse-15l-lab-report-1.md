@@ -1,4 +1,6 @@
-# **Installing VScode**
+# **CSE 15L Lab Report 1**
+
+## **Installing VScode**
 
 To install Visual Studio code, first go to the [VS Code](https://code.visualstudio.com) website. Download the version for the operating system you have, such as Windows or macOS. After finishing the installation, running VScode should open up with a window that looks like this:
 
@@ -7,7 +9,7 @@ To install Visual Studio code, first go to the [VS Code](https://code.visualstud
  ![Image](GetStarted2.jpg)
 If you see this, you are good.
 
-# **Remotely Connecting**
+## **Remotely Connecting**
 
 If you are on Windows, the first step to remotely connecting is to download OpenSSh, where you can follow the steps from this [Link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) or follow the steps from here 
 
@@ -33,7 +35,7 @@ After saying yes, it will prompt you for your password, so copy and paste it in 
 
 If you see "You are using 0% CPU on this system," you have successfully logged in and you are now remotely connected to a computer in the CSE basement. Any commands you run on your terminal will run on that computer.
 
-# **Trying Some Commands**
+## **Trying Some Commands**
 There are many command you can run, which may have different results depending on if you use them on *your* computer versus the remote computer after ssh-ing. Try running these commands (to try out a command, just copy and paste one in your terminal):
 * cd ~
 * cd
@@ -51,7 +53,7 @@ with the remote computer message on top and my computer's message below.
 I saw different messages dependent on whether I used the command on my computer vs the remote computer, so make sure to try out the commands on both.
  
 
-# **Moving Files with scp**
+## **Moving Files with scp**
 
 One power of remote connection is being able to copy files from your computer to the remote computer and vice versa. We will use a command called `scp`, which will always be run from your computer, not the one logged into ieng6. To try this out, create a file in VSCode called WhereAmI.java, and copy this in: 
 
@@ -73,7 +75,7 @@ Compile it and run it using `javac` and `java` on the terminal in your computer 
 Then run this command `scp WhereAmI.java cs15lsp22zz@ieng6.ucsd.edu:~/` in the terminal from the directory where you made this file (make sure to replace the zz). Like with ssh, it will prompt you for a password, so just put it in. Then log in with ssh again and use `ls`. You should see the file there, so run it on the *ieng6 computer* using `javac` and `java` (java is installed on the server so everyone can do this step). The result should look something like this: ![Image](run2.jpg)
 
 
-# **Setting an SSH Key**
+## **Setting an SSH Key**
 Using ssh or scp requires us to input our password each time, so a way to bypass that is `SSH Keys`. A program, called `ssh-keygen` creates a *public key* and *private key*, where you keep the private key on your computer (client) and send a copy of the public key to the remote computer (server). To set this up, follow these commands (if you're on windows, there will be a few different parts, which will be bolded. Instead of `id_rsa`, you will see  `id_ed25519` or something like that):
 
 * on client (your computer)
@@ -115,7 +117,7 @@ It should look something like this:
 ![Image](setUp2.jpg) 
 
 
-# **Optimizing Remote Running**
+## **Optimizing Remote Running**
 Now, you can log in to the remote computer without inputting a password. It should go something like this: ![Image](NoPw.jpg)
 
 There is no longer a prompt for a password. Some other ways to optimize remote running is using the up-arrow on your keyboard to recall the last command that was run. You can use semicolons to run multiple commands on the same line in most terminals. For example, `cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI`. And can write a command in quotes at the end of an ssh command to directly run it on the remote server, then exit. For example, this command will log in and list the home directory on the remote server: `ssh cs15lsp22zz@ieng6.ucsd.edu "ls"`
