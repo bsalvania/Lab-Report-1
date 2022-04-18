@@ -11,7 +11,7 @@ If you see this, you are good.
 
 ## **Remotely Connecting**
 
-If you are on Windows, the first step to remotely connecting is to download OpenSSh, where you can follow the steps from this [Link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) or follow the steps from here 
+If you are on Windows, the first step to remotely connecting is to download OpenSSh, where you can follow the steps from this [link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) or follow the steps from here 
 
 ![Image](installationOpenSSH.jpg) 
 
@@ -21,15 +21,15 @@ and ensure you can find OpenSSH Client/Server in your apps, which should look li
 
 --- 
 
-The next step is to find your course-specific account for CSE15L using this [Link](https://sdacs.ucsd.edu/~icc/index.php). After logging in, you should see a page that looks like this and you can find your account name by looking under additional accounts. ![Image](accountName.jpg)
+The next step is to find your course-specific account for CSE15L using this [link](https://sdacs.ucsd.edu/~icc/index.php). After logging in, you should see a page that looks like this and you can find your account name by looking under additional accounts. ![Image](accountName.jpg)
 
 ---
 Finally, enter VSCode and open a terminal by clicking "Terminal" and then "New Terminal" in the top left of the window or by pressing "ctrl" + " ' " (button below escape key and to the left of 1 key) together at the same time. Then in the terminal, type in ssh cs15lsp22zz@ieng6.ucsd.edu, replacing the zz with the letters in your course-specific account (like how mine is afg as seen above). 
 
-If this is the first time you have connected to the server, you will get a message like `*The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established.*` *and `RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.` and
-`Are you sure you want to continue connecting (yes/no/[fingerprint])?` This is to be expected if its your first time connecting, so type yes in the terminal. If it isn't and you get this message again, someone may be trying to listen in on or control the connection. If so, follow this [Link](https://superuser.com/questions/421074/ssh-the-authenticity-of-host-host-cant-be-established/421084#421084) by Ben Voigt to find out more about what is happening.
+If this is the first time you have connected to the server, you will get a message like `The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established.` and `RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.` and
+`Are you sure you want to continue connecting (yes/no/[fingerprint])?` This is to be expected if its your first time connecting, so type yes in the terminal. If it isn't and you get this message again, someone may be trying to listen in on or control the connection. If so, follow this [link](https://superuser.com/questions/421074/ssh-the-authenticity-of-host-host-cant-be-established/421084#421084) by Ben Voigt to find out more about what is happening.
 
-After saying yes, it will prompt you for your password, so copy and paste it in as that will ensure you put it in correctly. Don't worry about the fact that you can't see it, its invisible so that others won't steal your password. Once you have logged in, you should see something like this, 
+After saying yes, it will prompt you for your password, so copy and paste it in as that will ensure you put it in correctly. Don't worry about the fact that you can't see it, its invisible so that others won't steal your password. Once you have logged in, you should see something like this: 
 
 ![Image](sshLogin.jpg)
 
@@ -45,7 +45,7 @@ There are many command you can run, which may have different results depending o
 * cp /home/linux/ieng6/cs15lsp22/public/hello.txt ~/
 * cat /home/linux/ieng6/cs15lsp22/public/hello.txt
 
-Try and see if you can find out what each command does. For example, when I ran `cp /home/linux/ieng6/cs15lsp22/public/hello.txt ~/`, I saw this message 
+Try and see if you can find out what each command does. For example, when I ran `cp /home/linux/ieng6/cs15lsp22/public/hello.txt ~/`, I saw this message, 
 
 ![Image](commands.jpg) 
 
@@ -81,7 +81,7 @@ Using ssh or scp requires us to input our password each time, so a way to bypass
 * on client (your computer)
 * ssh-keygen (windows users use `ssh-keygen -t ed25519`)
 * Generating public/private **rsa** key pair.
-* Enter file in which to save the key (/Users/<user-name>/.ssh/id_rsa): /Users/<user-name>/.ssh/**id_rsa**
+* Enter file in which to save the key (/Users/<user-name>/.ssh/id_rsa): /Users/<user-name>/.ssh/ **id_rsa**
 * Enter passphrase (empty for no passphrase): (**Note: Do not add a passphrase**)
 * Enter same passphrase again: 
 * Your identification has been saved in /Users/<user-name>/.ssh/**id_rsa**.
