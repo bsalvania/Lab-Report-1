@@ -81,7 +81,7 @@ Using ssh or scp requires us to input our password each time, so a way to bypass
 * on client (your computer)
 * ssh-keygen (windows users use `ssh-keygen -t ed25519`)
 * Generating public/private **rsa** key pair.
-* Enter file in which to save the key (/Users/<user-name>/.ssh/id_rsa): /Users/<user-name>/.ssh/ **id_rsa**
+* Enter file in which to save the key (/Users/<user-name>/.ssh/id_rsa): /Users/<user-name>/.ssh/**id_rsa**
 * Enter passphrase (empty for no passphrase): (**Note: Do not add a passphrase**)
 * Enter same passphrase again: 
 * Your identification has been saved in /Users/<user-name>/.ssh/**id_rsa**.
