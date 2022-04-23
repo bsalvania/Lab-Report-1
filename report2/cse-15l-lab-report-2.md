@@ -7,8 +7,12 @@
     * 4th link causes infinite loop
 * Symptom: ![Image](symptomOne.jpg)
 * The bug was that because there were multiple parenthesis in the 4th link (the failure-inducing input), the variable closeParen got the wrong index. This made it so that the while loop never finished, with the bug causing an infinite loop, as currentIndex would never become greater than markdown.length(). 
-
-
-
-
+---
 ## Change 2: Differentiating between an image and a link
+
+* Code Change: ![Image](codeChangeTwo.jpg)
+* Link to test file for *failure-inducing input*: [link](https://github.com/TheJoeship/markdown-parser-fork/commit/ca97f28fa6755f1d48b519a208765e39ffd9a4f2 )
+    * 4th link causes infinite loop
+* Symptom: ![Image](symptomTwo.jpg)
+* 
+---
