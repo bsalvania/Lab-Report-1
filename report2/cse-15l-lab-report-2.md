@@ -10,6 +10,7 @@
 * Symptom: ![Image](symptomOne.jpg)
 
 * The failure-inducing input causes the bug to show its symptoms as the bug doesn't show any symptoms unless the input has a link with multiple parentheses. The bug was that because there were multiple parentheses in the 4th link (the failure-inducing input), the variable closeParen got the wrong index. This made it so that the while loop never finished, with the bug causing an infinite loop, as currentIndex would never become greater than markdown.length(). 
+
 ---
 ## Change 2: Differentiating between an image and a link
 
@@ -22,6 +23,7 @@
 * Symptom: ![Image](symptomTwo.jpg)
 
 * The failure-inducing input causes the bug to show its symptoms as the bug doesn't show any symptoms unless the input has an image. The bug is that the method would grab images and insert them into the array list. As a result, the output would include links and images, instead of just links.
+
 ---
 ## Change 3: Index Out Of Bounds fix (No link and brackets in .md file)
 
