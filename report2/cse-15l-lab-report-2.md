@@ -36,4 +36,4 @@
 * The failure-inducing input causes the bug to show its symptoms as the bug doesn't show any symptoms unless the input has no links. The bug is that the method will try to get a substring from index 0 to index -1, because when there are no links and thus no parentheses, some variables will have an index equal to -1. As a result, the bug shows its symptoms by throwing an index out of bounds exception.
 
 ---
-[Home](https://bsalvania.github.io/cse-15l-lab-reports/index.html)
+[Homepage](https://bsalvania.github.io/cse-15l-lab-reports/index.html)
