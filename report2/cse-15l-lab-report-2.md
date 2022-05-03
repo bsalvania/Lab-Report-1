@@ -9,7 +9,7 @@
 
 * Symptom: ![Image](symptomOne.jpg)
 
-* The failure inducing input is a link with multiple parentheses inside it. The bug is that the method never stops running, as a result of the method never finishing as the index for the parentheses keeps switching back and forth for the parenthesis. The symptom is an infinite loop, which eventually results in a OutOfMemoryError.
+* The failure inducing input is a link with multiple parentheses inside it. The bug is that the method never stops running, because the index for the parentheses keeps switching back and forth. The symptom is an infinite loop, which eventually results in a OutOfMemoryError.
 
 
 ---
