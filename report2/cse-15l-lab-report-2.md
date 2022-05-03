@@ -9,7 +9,8 @@
 
 * Symptom: ![Image](symptomOne.jpg)
 
-* The failure-inducing input causes the bug to show its symptoms as the bug doesn't show any symptoms unless the input has a link with multiple parentheses. The bug was that because there were multiple parentheses in the 4th link (the failure-inducing input), the variable closeParen got the wrong index. This made it so that the while loop never finished, with the bug causing an infinite loop, as currentIndex would never become greater than markdown.length(). 
+* The failure inducing input is a link with multiple parentheses inside it. The bug is that the method never stops running, as a result of the method never finishing as the index for the parentheses keeps switching back and forth for the parenthesis. The symptom is an infinite loop, which eventually results in a OutOfMemoryError.
+
 
 ---
 ## Change 2: Differentiating between an image and a link
@@ -22,7 +23,7 @@
     * The problem is that the method thinks an image is a link and thus adds it to the array list of links. This is a problem because the array list should only contain links that the file has.
 * Symptom: ![Image](symptomTwo.jpg)
 
-* The failure-inducing input causes the bug to show its symptoms as the bug doesn't show any symptoms unless the input has an image. The bug is that the method would grab images and insert them into the array list. As a result, the output would include links and images, instead of just links.
+* The failure-inducing input is an image that the file contains. The bug is that the method reads the image as a link, because the method is based on brackets and parentheses, which an image has. The symptom is that the image link is added to the array of links that is outputted at the end of the function.
 
 ---
 ## Change 3: Index Out Of Bounds fix (No link and brackets in .md file)
@@ -35,7 +36,6 @@
 
 * Symptom: ![Image](symptomThree.jpg)
 
-* The failure-inducing input causes the bug to show its symptoms as the bug doesn't show any symptoms unless the input has no links. The bug is that the method will try to get a substring from index 0 to index -1, because when there are no links and thus no parentheses, some variables will have an index equal to -1. As a result, the bug shows its symptoms by throwing an index out of bounds exception.
-
+* The failure-inducing input is a file with no links and brackets. The bug is that because there are brackets and no parentheses, the variables for the parentheses are giving an index of -1. The method tries to get a string using the index -1, giving the symptom of a StringIndexOutOfBoundsException.
 ---
 [Homepage](https://bsalvania.github.io/cse-15l-lab-reports/index.html)
