@@ -37,5 +37,6 @@
 * Symptom: ![Image](symptomThree.jpg)
 
 * The failure-inducing input is a file with no links and brackets. The bug is that because there are brackets and no parentheses, the variables for the parentheses are giving an index of -1. The method tries to get a string using the index -1, giving the symptom of a StringIndexOutOfBoundsException.
+
 ---
 [Homepage](https://bsalvania.github.io/cse-15l-lab-reports/index.html)
