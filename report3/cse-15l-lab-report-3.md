@@ -32,8 +32,13 @@ After making any file, lets say Test.java, I can use the command ```scp Test.jav
 
 ---
 ## Setup Github Access from ieng6
+To see where the public key I made is stored on Github, I first clicked the top right icon with my profile picture and clicked settings. 
+![Image](githubStart.jpg)
 
+Then I navigated to where the *access* section of the sidebar, clicked ```SSH and GPG keys```, and I can see my public key.
+![Image](githubAccess.jpg)
 
-
+My private key can be seen here: 
+![Image](privateKey.jpg)
  ---
  [Homepage](https://bsalvania.github.io/cse-15l-lab-reports/index.html)
