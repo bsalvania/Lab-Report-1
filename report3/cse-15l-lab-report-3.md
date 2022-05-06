@@ -38,7 +38,7 @@ To see where the public key I made is stored on Github, I first clicked the top 
 Then I navigated to where the *access* section of the sidebar, clicked ```SSH and GPG keys```, and I can see my public key.
 ![Image](githubAccess.jpg)
 
-My private key can be seen here: 
+My public and private key that is stored in my usre account can be seen here: 
 ![Image](privateKey.jpg)
  ---
  [Homepage](https://bsalvania.github.io/cse-15l-lab-reports/index.html)
