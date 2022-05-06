@@ -10,7 +10,7 @@ I then double clicked the config file (you can click the file, then right click,
 
 Finally, in the config file, I wrote in 
 ```
-Host ieng6 
+Host ieng6 (ieng6 is an alias, you can change it to whatever you want)
   HostName ieng6.ucsd.edu
   User cs15lsp22afg (<-- My account, change the last few letters to your own account)
 ```
@@ -18,8 +18,17 @@ as seen in the image below.
 ![Image](configFileNotepadEdit.jpg)
 
 This allows me to ssh easier as I can just type in ```ssh ieng6```
-to log into my remote account. I don't have to remember everything else and type in this longer command ```ssh cs15lsp22afg@ieng6.ucsd.edu```. You can see the first one is much easier to type in and remember. 
+to log into my remote account. I don't have to remember everything else and type in this longer command ```ssh cs15lsp22afg@ieng6.ucsd.edu```. You can see the first one is much easier to type in and remember. You can see me using the first command below.
 
+![Image](sshWithAlias.jpg)
+
+I can even copy files to my account using scp command and just my alias. For example, my current directory in my account looks like this:
+
+![Image](currentDirectory.jpg)
+
+After making any file, lets say Test.java, I can use the command ```scp Test.java ieng6:~/``` and it will appear in the home directory of my account. After using the command, you can see the file in my home directory of my account in the image below.
+
+![Image](postDirectory.jpg)
 
  ---
  [Homepage](https://bsalvania.github.io/cse-15l-lab-reports/index.html)
