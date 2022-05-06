@@ -30,5 +30,10 @@ After making any file, lets say Test.java, I can use the command ```scp Test.jav
 
 ![Image](postDirectory.jpg)
 
+---
+## Setup Github Access from ieng6
+
+
+
  ---
  [Homepage](https://bsalvania.github.io/cse-15l-lab-reports/index.html)
