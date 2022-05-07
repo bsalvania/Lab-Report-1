@@ -2,6 +2,7 @@
 
 ## **Streamlining ssh Configuration**
 To streamline my ssh Configuration, first I navigated to the config file in my .ssh folder as seen in the image below. 
+
 ![Image](configFile.jpg)
 
 I then double clicked the config file (you can click the file, then right click, and then click open with) and when it asked how I wanted to open the file, I clicked "Notepad". 
