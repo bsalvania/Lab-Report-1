@@ -53,7 +53,7 @@ Since it would be arduous to copy and send each and every file in our directory 
 Here is the result of compiling and running the tests for my new repository:
 ![Image](logInAndRun.jpg)
 
-Here is the result of combining all these steps to copy the whole directory and run the tests in one line:
+Here is the result of combining all these steps to copy the whole directory and run the tests in one line (two images below):
 ![Image](OneLine1.jpg)
 ![Image](OneLine2.jpg)
 
