@@ -40,5 +40,11 @@ Then I navigated to where the *access* section of the sidebar, clicked ```SSH an
 
 My public and private key that is stored in my usre account can be seen here: 
 ![Image](privateKey.jpg)
+
+Now that my ieng6 account and Github are connected, I can commit and push changes using my ieng6 account. For example, if I make changes to my Test.java file, I can use the terminal for my ieng6 account and run the commands `git add Test.java`, and then `git commit -m "Commit and push change to Test.java on ieng6 account"`, and finally `git push origin main` . You can see in the image down below. 
+![Image](gitCommands.jpg)
+
+Link to the resulting commit: [Lin](https://github.com/bsalvania/markdown-parser/commit/3a8bf91500f6d70c4394cb8526141ebd937d5c6d)
+
  ---
  [Homepage](https://bsalvania.github.io/cse-15l-lab-reports/index.html)
