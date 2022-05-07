@@ -49,7 +49,7 @@ Link to the resulting commit: [Link](https://github.com/bsalvania/markdown-parse
 
 ---
 ## Copy whole directories with ```scp -r```
-Since it would be arduous to copy and send each and every file in our directory to our remote account, an easier way is to copy and send the whole directory. To copy a directory, you run the command `scp -r . cs15lsp22afg@ieng6.ucsd.edu:~/markdown-parse-copy`. `-r` tells scp to run recursively, meaning it'll copy everything withing the directory, the `.` means the directory you are currently in and want to copy, and `~/markdown-parse-copy` tells scp to create a directory with that name and put all the files in that directory. Here is the result of running the command: ![Image](commandRun.jpg).
+Since it would be arduous to copy and send each and every file in our directory to our remote account, an easier way is to copy and send the whole directory. To copy a directory, you run the command `scp -r . cs15lsp22afg@ieng6.ucsd.edu:~/markdown-parse-copy`. `-r` tells scp to run recursively, meaning it'll copy everything withing the directory, the `.` means the directory you are currently in and want to copy, and `~/markdown-parse-copy` tells scp to create a directory with that name and put all the files in that directory. Here is the result of running the command: ![Image](commandRun.jpg)
 Here is the result of compiling and running the tests for my new repository:
 ![Image](logInAndRun.jpg)
 
