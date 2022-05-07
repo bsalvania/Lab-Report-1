@@ -44,7 +44,12 @@ My public and private key that is stored in my usre account can be seen here:
 Now that my ieng6 account and Github are connected, I can commit and push changes using my ieng6 account. For example, if I make changes to my Test.java file, I can use the terminal for my ieng6 account and run the commands `git add Test.java`, and then `git commit -m "Commit and push change to Test.java on ieng6 account"`, and finally `git push origin main` . You can see in the image down below. 
 ![Image](gitCommands.jpg)
 
-Link to the resulting commit: [Lin](https://github.com/bsalvania/markdown-parser/commit/3a8bf91500f6d70c4394cb8526141ebd937d5c6d)
+Link to the resulting commit: [Link](https://github.com/bsalvania/markdown-parser/commit/3a8bf91500f6d70c4394cb8526141ebd937d5c6d)
+
+---
+## Copy whole directories with ```scp -r```
+Since it would be arduous to copy and send each and every file in our directory to our remote account, an easier way is to copy and send the whole directory. To copy a directory, you run the command `scp -r . cs15lsp22@ieng6.ucsd.edu:~/markdown-parse`. `-r` tells scp to run recursively, meaning it'll copy everything withing the directory, the `.` means the directory you are currently in and want to copy, and `~/markdown-parse` tells scp to create a directory with that name and put all the files in that directory. Here is the result of running the command: ![Image](commandRun.jpg).
+
 
  ---
  [Homepage](https://bsalvania.github.io/cse-15l-lab-reports/index.html)
