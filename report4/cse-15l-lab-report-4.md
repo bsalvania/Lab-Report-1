@@ -11,11 +11,13 @@
 
 * I think there is a small code change that will make my program work for snippet 1 and all related cases that use inline code with backticks. Since the backtick only affects the output if they are within the parentheses, I would use an if statement to check if there is a backtick right after the open parentheses or if there is a backtick right before the closing parentheses. If so, then I would increment the variable for the index of the open parentheses or decrement the variable for the index of the closed parentheses by 1, to ignore the backticks.
 
-## Snippet 2
+## Snippet 22
 * Expected output: [a.com, b.com, a.com(()), example.com]
 * Image of the code for the test: 
 ![Snippet 2](snippet2Test.jpg)
 * Output of **my implementation**: 
+
+
 ![myOutputSnippet2](myOutputSnippet2.jpg)
 * Output of **reviewed implementation**: ![reviewOutputSnippet2](reviewOutputSnippet2.jpg)
 
