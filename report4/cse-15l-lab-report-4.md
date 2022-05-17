@@ -13,7 +13,8 @@
 
 ## Snippet 2
 * Expected output: [a.com, b.com, a.com(()), example.com]
-* Image of the code for the test: ![Snippet 2](snippet2Test.jpg)
+* Image of the code for the test: 
+![Snippet 2](snippet2Test.jpg)
 * Output of **my implementation**: ![myOutputSnippet2](myOutputSnippet2.jpg)
 * Output of **reviewed implementation**: ![reviewOutputSnippet2](reviewOutputSnippet2.jpg)
 
