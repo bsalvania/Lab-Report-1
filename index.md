@@ -6,4 +6,4 @@
 
 3. Lab Report 3, Week 6: [Link](https://bsalvania.github.io/cse-15l-lab-reports/report3/cse-15l-lab-report-3.html)
 
-4. Lab Report 4, Week 8: [Link](https://bsalvania.github.io/cse-15l-lab-reports/report3/cse-15l-lab-report-4.html)
+4. Lab Report 4, Week 8: [Link](https://bsalvania.github.io/cse-15l-lab-reports/report4/cse-15l-lab-report-4.html)
