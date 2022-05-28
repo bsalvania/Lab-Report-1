@@ -25,8 +25,9 @@
 * Output of **my implementation**: ![myOutputSnippet3](myOutputSnippet3.jpg)
 * Output of **reviewed implementation**: ![reviewOutputSnippet3](reviewOutputSnippet3.jpg)
 
-* I think there isn't a small code change that will make the program work for snippet 3 and all related cases that have newlines in brackets and parentheses. Like with snippet 2, there are all sorts of cases that can happen when dealing with newlines in brackets and parentheses. For example, there can be 1 new line or 10 new lines. Additionally, adding a link that is missing brackets and/or parentheses will be difficult for the same reason. With many different scenarios, it would be hard to code for where the string starts and where it ends.
+* I think there is a small code change that will make my program work for snippet 3 and all related cases that have newlines in brackets and parentheses. Since the problem is line breaks in the code, we could write a few lines of code to ignore the whitespace in the parsed string. By doing this, the method will not break due to newlines and should be able to find the opening parenthesis/bracket and the closing parenthesis/bracket if they exist. 
+
 
 
  ---
- [Homepage](https://bsalvania.github.io/cse-15l-lab-reports/index.html)
+ [Homepage](https://bsalvania.github.io/cse-15l-lab-reports/index.html) 
