@@ -21,7 +21,7 @@
 
 ![Image](providedImplementationOutputTest1.jpg)
 
-* Bug in my implementation: My implementation runs into a StringIndexOutOfBoundsException, because the `.charAt` function is trying to access index `-1`. To fix this, we need to make sure that the value for `.charAt` does not go out of bounds, so we can add an if statement right before the highlighted code that checks that `openBracket - 1` and `openParen - 1` are `>= 0` . By doing this, it ensures the `.charAt` function does not try to access a negative index, and so ensures that we do not run into a StringIndexOutOfBoundsException.
+* Bug in my implementation: My implementation runs into a StringIndexOutOfBoundsException, because the `.charAt` function is trying to access index `-1`. To fix this, we need to make sure that the value for `.charAt` does not go out of bounds, so we can add an if statement right before the highlighted code that checks that `openBracket - 1` and `openParen - 1` are `>= 0` . By doing this, it ensures the `.charAt` function does not try to access a negative index, and so it makes sure that we do not run into a StringIndexOutOfBoundsException.
 
 * Highlighted code: ![Image](bugTest1.jpg)
 
