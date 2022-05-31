@@ -1,0 +1,1 @@
+For `201.md`, there is a line where there are opening and closing brackets, but no parentheses, which could be the problem. A potential fix is removing all the if statements for `... == -1` and combining them into 1 if statement after line 30, where if any of the variables `openBracket, closeBracket, openParen, and closeParen` equals -1, then it just breaks the while loop.
