@@ -2,11 +2,11 @@
 
 * How I found the tests with different results: I found the tests with different results using vimdiff on the results of running a bash for loop. I first ran `bash script.sh > results.txt ` on the implementation provided for lab 9, then ran `bash script.sh > results.txt` on my own implementation to get the results of each test for both implementations. Then I ran `vimdiff week9-markdown-parser/results.txt cse15lsp22-markdown-parser/results.txt` to compare the results, with the information before the `/` being the directory where the .txt file was located.
 * Link to test-file with different results: 
-1. https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/201.md
+* https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/201.md
 
 ![Image](testFile1.jpg)
 
-2. https://github.com/bsalvania/markdown-parser/blob/main/577.md
+* https://github.com/bsalvania/markdown-parser/blob/main/577.md
 
 ![Image](testFile2.jpg)
 
